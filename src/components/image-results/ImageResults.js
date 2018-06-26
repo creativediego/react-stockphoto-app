@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { Component } from 'react'
+import propTypes from 'prop-types'
 
-export const NavBar = () => {
-    return ( <
-        div >
+class ImageResults extends Component {
 
-        <
-        /div>
+    propTypes = {
+
+        images: propTypes.array.isRequired
+        
+        }
+        
+
+  render() {
+    return (
+      <div>
+        
+      </div>
     )
+  }
 }
+
+
+export default ImageResults;
