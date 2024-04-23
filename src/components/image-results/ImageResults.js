@@ -31,9 +31,13 @@ class ImageResults extends Component {
         <GridListTile key="Subheader" cols={3} style={{ height: 'auto' }}>
          
         </GridListTile>
-        {images.map(img => (
+        {images.map(img => 
           <GridListTile key={img.id}>
+          
+            
             <img src={img.largeImageURL} alt="" />
+
+        
             <GridListTileBar
               title={img.tags}
               subtitle={<span>by: {img.user}</span>}
@@ -44,7 +48,7 @@ class ImageResults extends Component {
               }
             />
           </GridListTile>
-        ))}
+        )}
       </GridList>
       );
     } else {
